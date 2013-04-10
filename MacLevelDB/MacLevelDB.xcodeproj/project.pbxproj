@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		84E901ED1715D07500E263FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84E901EB1715D07500E263FC /* InfoPlist.strings */; };
-		84E9024F1715D34300E263FC /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E9024E1715D34300E263FC /* libleveldb.a */; };
 		84E902521715D36B00E263FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E901E71715D07500E263FC /* Foundation.framework */; };
 		84E9026F1715D4C700E263FC /* NSLDBIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E902571715D4C700E263FC /* NSLDBIterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84E902701715D4C700E263FC /* NSLDBIterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84E902581715D4C700E263FC /* NSLDBIterator.mm */; };
@@ -89,6 +88,7 @@
 		84E9038B1715DD6000E263FC /* testutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = 84E902F91715D8AD00E263FC /* testutil.cc */; };
 		84E9038E1715DD9F00E263FC /* c_test.c in Sources */ = {isa = PBXBuildFile; fileRef = 84E9028F1715D83600E263FC /* c_test.c */; };
 		84E9038F1715DE4B00E263FC /* comparator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 84E902E51715D8AD00E263FC /* comparator.cc */; };
+		84E903901715E1A000E263FC /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E903541715DD0700E263FC /* libleveldb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,6 @@
 		84E901EA1715D07500E263FC /* MacLevelDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacLevelDB-Info.plist"; sourceTree = "<group>"; };
 		84E901EC1715D07500E263FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84E901EE1715D07500E263FC /* MacLevelDB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacLevelDB-Prefix.pch"; sourceTree = "<group>"; };
-		84E9024E1715D34300E263FC /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = ../leveldb/libleveldb.a; sourceTree = "<group>"; };
 		84E902571715D4C700E263FC /* NSLDBIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLDBIterator.h; sourceTree = "<group>"; };
 		84E902581715D4C700E263FC /* NSLDBIterator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSLDBIterator.mm; sourceTree = "<group>"; };
 		84E902591715D4C700E263FC /* NULDBCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NULDBCache.h; sourceTree = "<group>"; };
@@ -227,9 +226,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E903901715E1A000E263FC /* libleveldb.a in Frameworks */,
 				84E9034D1715D9C200E263FC /* libstdc++.dylib in Frameworks */,
 				84E902521715D36B00E263FC /* Foundation.framework in Frameworks */,
-				84E9024F1715D34300E263FC /* libleveldb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +266,6 @@
 			children = (
 				84E901E71715D07500E263FC /* Foundation.framework */,
 				84E9034C1715D9C200E263FC /* libstdc++.dylib */,
-				84E9024E1715D34300E263FC /* libleveldb.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
