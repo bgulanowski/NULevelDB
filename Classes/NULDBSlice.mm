@@ -105,7 +105,7 @@ using namespace leveldb;
 }
 
 - (id)initWithSlice:(Slice&)slice key:(Slice&)key {
-    NULDBSliceType sliceType;
+    NULDBSliceType sliceType = kNULDBSliceTypeUndefined;
     return [self initWithObject:[NULDBSlice objectWithSlice:slice key:key type:&sliceType] type:sliceType];
 }
 
